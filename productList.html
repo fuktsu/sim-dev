@@ -31,9 +31,21 @@
 		<hr align="center" size="2" color="black"></hr>
 		
 		<br>
+		<table align="center">
+			<tr>
+				<td>
+					<form action="<%=request.getContextPath()%>/search">
+						<input type="radio" name="view" value="出品">出品</input>
+						<input type="radio" name="view" value="商品">商品</input>
+						<input type="submit" name="search" value="検索"></input>
+					</form>
+				</td>
+			</tr>
+		</table>
 
 		<table align="center">
 			<tr>
+				<th style="background-color:#6666ff;">　出品者　</th>
 				<th style="background-color:#6666ff;">　商品名　</th>
 				<th style="background-color:#6666ff;">　商品のカテゴリー　</th>
 				<th style="background-color:#6666ff;">　商品の状態　</th>
@@ -42,6 +54,7 @@
 				<th style="background-color:#6666ff;">購入</th>
 			</tr>
 			<tr>
+				<td style="text-align:center;"><a href="./detail">test</a></td>
 				<td style="text-align:center;"><a href="./detail">机</a></td>
 				<td style="text-align:center;">インテリア・住まい・小物</td>
 				<td style="text-align:center;">新品</td>
