@@ -40,6 +40,7 @@
 				<th style="background-color:#6666ff;">　在庫　</th>
 				<th style="background-color:#6666ff;">　価格　</th>
 				<th style="background-color:#6666ff;">取引状況</th>
+				<th style="background-color:#6666ff;">　メッセージ　</th>
 				<th style="background-color:#6666ff;">削除</th>
 			</tr>
 			<tr>
@@ -49,6 +50,9 @@
 				<td style="text-align:center;">1</td>
 				<td style="text-align:center;">2000円</td>
 				<td style="text-align:center;">出品中</td>
+				<td align="center">
+					<a href="<%=request.getContextPath()%>/insertIntoCart?isbn=<%=books.getIsbn()%>">メッセージへ</a>
+				</td>
 				<td align="center">
 					<a href="<%=request.getContextPath()%>/delete?isbn=<%=books.getIsbn()%>">削除</a>
 				</td>
